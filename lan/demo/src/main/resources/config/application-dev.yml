@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/laimi_develop?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 1234
+  redis:
+    host: 101.236.43.161
+    port: 6379
+    password: u2CVLsHGYn4dVh6M4qTMr17iaQk
+
+server:
+  port: 9999
+  tomcat:
+      uri-encoding: utf-8
+
+logging:
+  root:
+    level: INFO
