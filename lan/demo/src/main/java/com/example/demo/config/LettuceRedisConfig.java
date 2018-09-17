@@ -49,7 +49,7 @@ public class LettuceRedisConfig {
         redisStandaloneConfiguration.setDatabase(database);
         redisStandaloneConfiguration.setHostName(host);
         redisStandaloneConfiguration.setPort(port);
-        redisStandaloneConfiguration.setPassword(RedisPassword.of(password));
+//        redisStandaloneConfiguration.setPassword(RedisPassword.of(password));
 
         // 集群版配置
 //        RedisClusterConfiguration redisClusterConfiguration = new RedisClusterConfiguration();
