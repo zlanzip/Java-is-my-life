@@ -20,10 +20,8 @@
     Sql代码 
         delete from `t_goods` where fi_id in (select * from ( select fi_id from `t_goods` where fs_num is null and fs_name is null and fs_type is null and fs_using is null and fs_lifetime is null) b)  
 
-
     Sql代码 
         delete from `t_goods` where fi_id in (select fi_id from `t_goods` where fs_num is null and fs_name is null and fs_type is null and fs_using is null and fs_lifetime is null)   
-
 
     Sql代码 
         delete from `t_goods` where fi_id in ( select fi_id from `t_goods` )   
@@ -39,10 +37,9 @@
 3.delete from table... 这其中table不能使用别名 
 ```sql
     Sql代码 
-
         delete from student a where a.id in (1,2);(执行失败) 
-
-        
-
         select a.* from student a where a.id in (1,2);(执行成功)`
 ```
+
+
+
