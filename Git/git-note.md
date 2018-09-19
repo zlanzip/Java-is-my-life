@@ -1,4 +1,9 @@
 
+## git全局配置信息
+    git config --list
+    https://git-scmcom/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE?tdsourcetag=s_pctim_aiomsg
+
+
 ## git仓库远程设置
     git remote set-url origin ssh://git@gitlab.51dinghuo.cc:33984/java/laimi-warehouse.git
 

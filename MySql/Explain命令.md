@@ -36,3 +36,4 @@ Rows = ((Records_PLeft +  Records_P1 + Records_P2 + ... + Records_P8 + Records_P
     InnoDB :支持事物和外键,速度不如前面的引擎块。
     Berkley(BDB) :支持事物和外键,速度不如前面的引擎块。
     一般需要事物的设为InnoDB,其他设为MyISAM
+
