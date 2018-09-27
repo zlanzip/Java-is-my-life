@@ -43,3 +43,36 @@
 
     解决方案：进入项目文件夹下的 .git文件中（显示隐藏文件夹或rm .git/index.lock）删除index.lock文件即可。
 
+## 开release分支
+
+    以后我们在上线前合并代码都通过 git flow 开个 release 分支, 命名用当前日期
+    $ git flow start release 20180912.0.xx 
+    然后 finish 在 finish 掉的时候这个 release 分支会合并会 master 和 develop
+    同时分支名会作为 tag 打好便签
+    $ git flow release finish 20180912.0.xx 
+    
+## git glow 流程
+
+    开始开发需求：
+        初始化: git flow init
+
+        开始新Feature: git flow feature start MYFEATURE
+
+        Publish一个Feature(也就是push到远程): git flow feature publish MYFEATURE
+
+        获取Publish的Feature: git flow feature pull origin MYFEATURE
+
+    上线前准备：
+        完成一个Feature: git flow feature finish MYFEATURE
+
+        开始一个Release: git flow release start RELEASE [BASE]
+
+    上线：
+        Publish一个Release: git flow release publish RELEASE
+        发布Release: git flow release finish RELEASE
+        别忘了git push --tags
+
+    维护：
+        开始一个Hotfix: git flow hotfix start VERSION [BASENAME]
+
+        发布一个Hotfix: git flow hotfix finish VERSION
