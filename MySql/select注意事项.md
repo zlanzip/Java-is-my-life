@@ -41,5 +41,6 @@
         select a.* from student a where a.id in (1,2);(执行成功)`
 ```
 
+## for update语句锁表的细节
 
-
+当for update的字段为索引或者主键的时候，只会锁住索引或者主键对应的行。而当for update的字段为普通字段的时候，Innodb会锁住整张表。
