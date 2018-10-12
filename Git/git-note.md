@@ -50,6 +50,9 @@
     然后 finish 在 finish 掉的时候这个 release 分支会合并会 master 和 develop
     同时分支名会作为 tag 打好便签
     $ git flow release finish 20180912.0.xx 
+
+    先把 feature 合并回 develop 
+    之后走 gitflow 的 release 流程便可以
     
 ## git glow 流程
 
