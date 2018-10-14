@@ -1,7 +1,7 @@
 
 ## 单zuul项目启动、网关转发
 
-application.properties配置
+1 application.properties配置
 
 ```java
 server.port=8888
@@ -13,13 +13,13 @@ zuul.routes.it.url=http://www.ityouknow.com
 zuul.routes.hello.path=/hello/**
 zuul.routes.hello.url=http://localhost:9000/
 ```
-定义了2个转发:
+2 定义了2个转发:
     
-凡是localhost:8888/it/** 的请求，全部指向 `http://www.ityouknow.com`
+2.1凡是localhost:8888/it/** 的请求，全部指向 `http://www.ityouknow.com`
 
  ![](image/2018-10-14-12-09-00.png)
 
-凡是localhost:8888/hello/** 的请求，全部指向到 9000端口的项目
+2.2凡是localhost:8888/hello/** 的请求，全部指向到 9000端口的项目
 如：`http://localhost:8888/hello/hello?name=zskx`  指向 `http://localhost:9000/hello?name=zskx`
 
 ![](image/2018-10-14-12-17-26.png)
