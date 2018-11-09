@@ -46,7 +46,7 @@
 ## 开release分支
 
     以后我们在上线前合并代码都通过 git flow 开个 release 分支, 命名用当前日期
-    $ git flow start release 20180912.0.xx 
+    $ git flow release start  20180912.0.xx 
     然后 finish 在 finish 掉的时候这个 release 分支会合并会 master 和 develop
     同时分支名会作为 tag 打好便签
     $ git flow release finish 20180912.0.xx 
