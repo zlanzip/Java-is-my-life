@@ -53,6 +53,15 @@
 
     先把 feature 合并回 develop 
     之后走 gitflow 的 release 流程便可以
+
+    打标签 
+        git tag -a 标签
+    推送某个标签
+        git push origin <tagname>
+    推送全部标签
+        git push origin --tags
+    ![](image/2018-12-26-17-39-44.png)
+
     
 ## git glow 流程
 
