@@ -1,12 +1,5 @@
 
 
-tomcat 
-
-## eureka注册中心
-
-    对外暴露的接口
-    3个定时器
-
 ## redis分布式锁
 
 常规 
@@ -90,7 +83,11 @@ tomcat
         return false;
     }
 ```
-##Mysql调优
 
-JVM
+切面分布式锁
 
+
+
+
+利用jedis提供的redis.clients.jedis.Jedis#set(java.lang.String, java.lang.String, java.lang.String, java.lang.String, long)
+![](image/2019-01-05-10-01-08.png)

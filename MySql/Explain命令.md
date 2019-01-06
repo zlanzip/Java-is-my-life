@@ -37,3 +37,16 @@ Rows = ((Records_PLeft +  Records_P1 + Records_P2 + ... + Records_P8 + Records_P
     Berkley(BDB) :支持事物和外键,速度不如前面的引擎块。
     一般需要事物的设为InnoDB,其他设为MyISAM
 
+## key_len 计算
+![](image/2019-01-04-15-23-55.png)
+
+##  当走索引查询的数据量大于30%,会走全表
+
+32行数据 总数据有75行
+SELECT * FROM `t_wms_dispatch_order` WHERE `rel_code` LIKE 'B000000%';
+![](image/2019-01-04-15-20-46.png)
+
+7行数据 总数据有75行
+EXPLAIN 
+SELECT * FROM `t_wms_dispatch_order` WHERE `rel_code` LIKE 'B00000039%';
+![](image/2019-01-04-15-23-15.png)
