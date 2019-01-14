@@ -22,3 +22,10 @@ jstat -options
     -gcutil 总结垃圾回收统计 jstat -gcutil 7172
     -printcompilation JVM编译方法统计 jstat -printcompilation 7172
 
+### jmap
+jmap -histo 72260 | grep laimi | head -20
+
+### jstack
+jstack pid  
+
+jstack -l 4089 >1.txt 输出到1.txt 文件
