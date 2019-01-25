@@ -146,7 +146,7 @@ CyclicBarrier 和 CountDownLatch 非常类似，它也可以实现线程间的�
 
 CountDownLatch是计数器，线程完成一个记录一个，只不过计数不是递增而是递减，而CyclicBarrier更像是一个阀门，需要所有线程都到达，阀门才能打开，然后继续执行。
 
-CyclicBarrier | CountDownLatch
+CountDownLatch  | CyclicBarrier
 --|:--:|--:
 |减技术方式|加技术方式|
 |线程|计算达到指定值时释放所有等待的线程|
